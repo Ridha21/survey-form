@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+	 <meta http-equiv="X-UA-compatible" content="IE=edge">
+	 <meta name="viewport" content="width=width-device, initial-scale=1.0">
+	 <link rel="stylesheet" href="css/style.css" type="text/css">
+	 <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Anime Lovers <span>Survey Form</span></h1>
+	<p id="description">Thank you for being a ones of our society</p>
+	<form id="survey-form">
+	   <div class="presentation" >
+	         <label for="name" id="name-label">Name</label>
+		     <input type="text" name="name" id="name" placeholder="Enter your name">
+		 
+		     <label for="email" id="email-label">Email</label>
+		     <input type="email" name="email" id="email" placeholder="Enter your email">
+		 
+		     <label for="number" id="number-label">Age(optional)</label>
+		     <input type="number" name="number" id="number" placeholder="Enter your age" min="14" max="50">
+	   </div>
+	   
+	   <div class="role">
+		 <p>Which option best describes your current role?</p>
+		 <select name="role" id="dropdown">
+		      <option value="" disabled selected>select current role</option>
+			  <option value="The Casual">The Casual</option>
+			  <option value="The Weeaboo">The Weeaboo</option>
+			  <option value="The Otaku">The Otaku</option>
+			  <option value="The Seasonal">The Seasonal</option>
+			  <option value="The Waifu">The Waifu</option>
+			  <option value="The Fujoshi">The Fujoshi</option>
+			  <option value="The Cancer">The Cancer</option>
+			  <option value="The Daywalker">The Daywalker</option>
+			  <option value="The Elitist">The Elitist</option>
+			  <option value="The End">The End</option>
+		 </select>
+	   </div>
+	   
+	   
+		 <p>Would you recommend Animes Lovers to a friend?</p>
+	   <div class="recommend">
+		 <label for="recommend-1"><input type="radio" id="recommend-1" name="recommend"/>Definitely<label>
+		 <label for="recommend-2"><input type="radio" id="recommend-2" name="recommend"/>Maybe<label>
+		 <label for="recommend-3"><input type="radio" id="recommend-3" name="recommend"/>Not sure<label>
+	   </div>
+	   
+	   
+		 <p>What is your favorite feature of Animes Lovers?</p>
+		<div class="option">
+		 <select name="role" id="dropdown">
+		      <option value="" disabled selected>select option</option>
+			  <option value="The Casual">Manga</option>
+			  <option value="Series">Series</option>
+			  <option value="Movies">Movies</option> 
+		 </select>
+		</div>
+		 
+		 <p>What would you like to see ? <small>(Check all that apply)</small></p>
+		<div class="check">
+		 <label for="see-1"><input type="checkbox" name="see" id="see-1" />Action<label>
+		 <label for="see-1"><input type="checkbox" name="see" id="see-2" />Comedy/Slice-of-Life<label>
+		 <label for="see-1"><input type="checkbox" name="see" id="see-3" />Drama/Tragedy<label>
+		 <label for="see-1"><input type="checkbox" name="see" id="see-4" />Psychological<label>
+		 <label for="see-1"><input type="checkbox" name="see" id="see-5" />History<label>
+		 <label for="see-1"><input type="checkbox" name="see" id="see-6" />Mecha/Military<label>
+		 <label for="see-1"><input type="checkbox" name="see" id="see-7" />Supernatural/Magic<label>
+		 <label for="see-1"><input type="checkbox" name="see" id="see-8" />Romance<label>
+		</div>
+		
+		 <textarea name="comments" id="comments" placeholder="Enter your comments here..."></textarea><br/><br/>
+		 
+		 <button id="submit">Submit</button>
+	</form>
+</body>
+</html>
